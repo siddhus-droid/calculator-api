@@ -1,33 +1,50 @@
-# Calculator API
+# 🧮 Calculator API
 
-A RESTful Calculator API built using Java Spring Boot.
+A RESTful Calculator API built using **Java**, **Spring Boot**, and **Maven**. It performs basic arithmetic operations through HTTP GET requests.
 
-## Features
-- Addition
-- Subtraction
-- Multiplication
-- Division
-- Handles invalid inputs
+## 🌐 Live API
 
-## Tech Stack
-- Java
+https://calculator-api-production-0878.up.railway.app
+
+## 🚀 Available Endpoints
+
+### ➕ Addition
+GET /add/{a}/{b}
+
+Example:
+https://calculator-api-production-0878.up.railway.app/add/10/20
+
+---
+
+### ➖ Subtraction
+GET /subtract/{a}/{b}
+
+Example:
+https://calculator-api-production-0878.up.railway.app/subtract/20/10
+
+---
+
+### ✖️ Multiplication
+GET /multiply/{a}/{b}
+
+Example:
+https://calculator-api-production-0878.up.railway.app/multiply/5/6
+
+---
+
+### ➗ Division
+GET /divide/{a}/{b}
+
+Example:
+https://calculator-api-production-0878.up.railway.app/divide/20/4
+
+## 🛠️ Technologies Used
+
+- Java 17
 - Spring Boot
 - Maven
+- Railway (Deployment)
 
-## API Endpoints
+## 👨‍💻 Author
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | /add?a=10&b=20 | Addition |
-| GET | /subtract?a=20&b=10 | Subtraction |
-| GET | /multiply?a=5&b=6 | Multiplication |
-| GET | /divide?a=20&b=4 | Division |
-
-## How to Run
-
-```bash
-mvn spring-boot:run
-```
-
-## Author
 Siddh Shah
