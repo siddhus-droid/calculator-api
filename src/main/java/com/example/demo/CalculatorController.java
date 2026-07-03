@@ -7,6 +7,22 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CalculatorController {
 
+    @GetMapping("/")
+    public String home() {
+        return """
+        Welcome to Calculator API!
+
+        Available Endpoints:
+        /add/{a}/{b}
+        /subtract/{a}/{b}
+        /multiply/{a}/{b}
+        /divide/{a}/{b}
+
+        Example:
+        /add/10/20
+        """;
+    }
+
     @GetMapping("/add/{a}/{b}")
     public int add(@PathVariable int a, @PathVariable int b) {
         return a + b;
